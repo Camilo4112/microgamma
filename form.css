@@ -1,0 +1,104 @@
+/* Estilos para el header y el menú */
+header {
+    padding: 10px 20px; /* Espaciado interno del encabezado */
+    color: #fff; /* Color del texto del encabezado */
+}
+
+nav {
+    display: flex; /* Mostrar los elementos en línea */
+    justify-content: space-between; /* Distribuir los elementos horizontalmente */
+    align-items: center; /* Centrar verticalmente los elementos */
+}
+
+.logo {
+    margin: 0; /* Eliminar el margen predeterminado del logo */
+}
+
+#menu_bx {
+    list-style-type: none; /* Eliminar los estilos de lista */
+    padding: 0; /* Eliminar el relleno predeterminado */
+    margin: 0; /* Eliminar el margen predeterminado */
+}
+
+#menu_bx li {
+    display: inline-block; /* Mostrar los elementos de la lista en línea */
+    margin-right: 20px; /* Espaciado entre elementos del menú */
+}
+
+#menu_bx li:last-child {
+    margin-right: 0; /* Eliminar el margen derecho del último elemento del menú */
+}
+
+#menu_bx li a {
+    text-decoration: none; /* Eliminar el subrayado predeterminado */
+    color: #fff; /* Color del texto del menú */
+    font-weight: bold; /* Negrita */
+}
+
+#menu_bx li a:hover {
+    color: #ffcc00; /* Cambiar el color del texto al pasar el ratón */
+}
+
+/* Estilos para el resto de la página */
+body {
+    font-family: Arial, sans-serif; /* Fuente del texto del cuerpo */
+    background-image: url('img/background1.png'); /* Imagen de fondo del cuerpo */
+    margin: 0; /* Eliminar el margen predeterminado del cuerpo */
+    padding: 0; /* Eliminar el relleno predeterminado del cuerpo */
+}
+
+h1 {
+    text-align: center; /* Centrar el título */
+}
+
+form {
+    max-width: 300px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centrar el formulario horizontalmente */
+    background-color: #ffffff; /* Color de fondo del formulario */
+    padding: 20px; /* Espaciado interno del formulario */
+    border-radius: 8px; /* Radio de borde del formulario */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra del formulario */
+}
+
+label {
+    display: block; /* Mostrar las etiquetas en bloque */
+    margin-bottom: 5px; /* Espaciado inferior de las etiquetas */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+    width: 100%; /* Ancho completo para los campos de entrada y botones */
+    padding: 10px; /* Espaciado interno de los campos de entrada y botones */
+    margin-bottom: 15px; /* Espaciado inferior de los campos de entrada y botones */
+    border: 1px solid #ccc; /* Borde de los campos de entrada y botones */
+    border-radius: 4px; /* Radio de borde de los campos de entrada y botones */
+    box-sizing: border-box; /* Tamaño del cuadro incluyendo el borde y el relleno */
+}
+
+input[type="submit"] {
+    background-color: #007bff; /* Color de fondo del botón de envío */
+    color: #ffffff; /* Color del texto del botón de envío */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón de envío */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Cambiar el color de fondo del botón de envío al pasar el ratón */
+}
+
+p {
+    text-align: center; /* Centrar el texto del párrafo */
+}
+
+/* Estilos para el enlace "Iniciar sesión" */
+p a {
+    color: #faf6f6; /* Color del texto del enlace del párrafo */
+    text-decoration: none; /* Eliminar el subrayado del enlace del párrafo */
+}
+
+p a:hover {
+    text-decoration: underline; /* Subrayar el enlace del párrafo al pasar el ratón */
+    color: #ffcc00; /* Cambiar el color del texto al pasar el ratón */
+}

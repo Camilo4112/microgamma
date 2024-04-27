@@ -16,3 +16,6 @@ menu_btn.addEventListener('click', ()=>{
     menu_bx.classList.toggle('ul_active');
 })
 
+document.getElementById("buscarBtn").addEventListener("click", function() {
+    window.location.href = "Community.html";
+});
