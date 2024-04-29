@@ -1,0 +1,79 @@
+
+    /* Estilos CSS aqu� */body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      
+      header {
+        padding: 10px 20px;
+        color: #fff;
+    }
+    
+    header h4 {
+        color: #000; /* Cambia el color del texto a negro */
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #menu_bx {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #menu_bx li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+    
+    #menu_bx li:last-child {
+        margin-right: 0;
+    }
+    
+    #menu_bx li a {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: bold;
+    }
+    
+    #menu_bx li a:hover {
+        color: #ffcc00;
+    }
+    header {
+        padding: 10px 20px;
+        color: #fff;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #menu_bx {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #menu_bx li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+    
+    #menu_bx li:last-child {
+        margin-right: 0;
+    }
+    
+    #menu_bx li a {
+        text-decoration: none;
+        color: #030303;
+        font-weight: bold;
+    }
+    
+        
