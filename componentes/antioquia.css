@@ -1,79 +1,127 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
 
-    /* Estilos CSS aqu� */body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-      }
-      
-      header {
-        padding: 10px 20px;
-        color: #fff;
-    }
-    
-    header h4 {
-        color: #000; /* Cambia el color del texto a negro */
-    }
-    
-    nav {
-        display: flex;
-        justify-content: space-between;
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+h1 {
+    color: #333;
+    margin-top: 20px;
+}
+
+.item {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex; /* Utilizamos flexbox para colocar la imagen y el texto en línea */
+}
+
+.item img {
+    max-width: 300px; /* Tamaño deseado para todas las imágenes */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.item .text {
+    flex: 1; /* El texto ocupará todo el espacio restante */
+}
+
+.item h2 {
+    margin-bottom: 10px; /* Espacio entre el título y el párrafo */
+}
+
+.item p {
+    color: #000000;
+}
+
+/* Estilos de encabezado y menú */
+header {
+    padding: 10px 20px;
+    color: #fff;
+}
+
+header h4 {
+    color: #000; /* Cambia el color del texto a negro */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease; /* Transición gradual para cambios en el menú */
+}
+
+#menu_bx {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+#menu_bx li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#menu_bx li:last-child {
+    margin-right: 0;
+}
+
+#menu_bx li a {
+    text-decoration: none;
+    color: #030303;
+    font-weight: bold;
+}
+
+#menu_bx li a:hover {
+    color: #ffcc00;
+}
+
+/* Estilos para dispositivos más pequeños */
+@media screen and (max-width: 768px) {
+    .item {
+        flex-direction: column;
         align-items: center;
     }
-    
-    #menu_bx {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-    }
-    
-    #menu_bx li {
-        display: inline-block;
-        margin-right: 20px;
-    }
-    
-    #menu_bx li:last-child {
+
+    .item img {
         margin-right: 0;
+        margin-bottom: 20px;
     }
-    
-    #menu_bx li a {
-        text-decoration: none;
-        color: #ffffff;
-        font-weight: bold;
+
+    .item .text {
+        text-align: center;
     }
-    
-    #menu_bx li a:hover {
-        color: #ffcc00;
-    }
-    header {
-        padding: 10px 20px;
-        color: #fff;
-    }
-    
+
     nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
+        align-items: center; /* Centrar el menú verticalmente */
+        justify-content: center; /* Centrar el menú horizontalmente */
+        height: auto; /* Ajustar automáticamente la altura del menú */
+        overflow: hidden; /* Ocultar el menú desbordado */
+        max-height: none; /* Eliminar la altura máxima para que el menú pueda crecer verticalmente */
     }
-    
+
     #menu_bx {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
+        flex-direction: column;
+        align-items: center; /* Centrar los elementos del menú verticalmente */
     }
-    
+
     #menu_bx li {
-        display: inline-block;
-        margin-right: 20px;
+        display: block;
+        margin: 10px 0;
     }
-    
-    #menu_bx li:last-child {
-        margin-right: 0;
+
+    /* Mostrar el menú cuando se activa */
+    nav.active {
+        max-height: none; /* Eliminar la altura máxima para que el menú pueda crecer verticalmente */
     }
-    
-    #menu_bx li a {
-        text-decoration: none;
-        color: #030303;
-        font-weight: bold;
-    }
-    
-        
+}

@@ -9,5 +9,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Limpiar los campos del formulario
         form.reset();
+
+        // Redirigir a la página de inicio de sesión
+        window.location.href = "login.html";
     });
 });
