@@ -1,11 +1,49 @@
-
-    /* Estilos CSS aquí */body {
+/* Estilos generales */
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-  }
-  
-  header {
+    background-color: #f2f2f2;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+h1 {
+    color: #333;
+    margin-top: 20px;
+}
+
+.item {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex; /* Utilizamos flexbox para colocar la imagen y el texto en lï¿½nea */
+}
+
+.item img {
+    max-width: 300px; /* Tamaï¿½o deseado para todas las imï¿½genes */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.item .text {
+    flex: 1; /* El texto ocuparï¿½ todo el espacio restante */
+}
+
+.item h2 {
+    margin-bottom: 10px; /* Espacio entre el tï¿½tulo y el pï¿½rrafo */
+}
+
+.item p {
+    color: #000000;
+}
+
+/* Estilos de encabezado y menï¿½ */
+header {
     padding: 10px 20px;
     color: #fff;
 }
@@ -18,47 +56,14 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: all 0.3s ease; /* Transiciï¿½n gradual para cambios en el menï¿½ */
 }
 
 #menu_bx {
     list-style-type: none;
     padding: 0;
     margin: 0;
-}
-
-#menu_bx li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-#menu_bx li:last-child {
-    margin-right: 0;
-}
-
-#menu_bx li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
-}
-
-#menu_bx li a:hover {
-    color: #ffcc00;
-}
-header {
-    padding: 10px 20px;
-    color: #fff;
-}
-
-nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#menu_bx {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
 }
 
 #menu_bx li {
@@ -76,4 +81,47 @@ nav {
     font-weight: bold;
 }
 
-    
+#menu_bx li a:hover {
+    color: #ffcc00;
+}
+
+/* Estilos para dispositivos mï¿½s pequeï¿½os */
+@media screen and (max-width: 768px) {
+    .item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .item .text {
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center; /* Centrar el menï¿½ verticalmente */
+        justify-content: center; /* Centrar el menï¿½ horizontalmente */
+        height: auto; /* Ajustar automï¿½ticamente la altura del menï¿½ */
+        overflow: hidden; /* Ocultar el menï¿½ desbordado */
+        max-height: none; /* Eliminar la altura mï¿½xima para que el menï¿½ pueda crecer verticalmente */
+    }
+
+    #menu_bx {
+        flex-direction: column;
+        align-items: center; /* Centrar los elementos del menï¿½ verticalmente */
+    }
+
+    #menu_bx li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Mostrar el menï¿½ cuando se activa */
+    nav.active {
+        max-height: none; /* Eliminar la altura mï¿½xima para que el menï¿½ pueda crecer verticalmente */
+    }
+}

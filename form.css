@@ -94,11 +94,27 @@ p {
 
 /* Estilos para el enlace "Iniciar sesión" */
 p a {
-    color: #faf6f6; /* Color del texto del enlace del párrafo */
+    color: #51dff1; /* Color del texto del enlace del párrafo */
     text-decoration: none; /* Eliminar el subrayado del enlace del párrafo */
 }
 
 p a:hover {
     text-decoration: underline; /* Subrayar el enlace del párrafo al pasar el ratón */
     color: #ffcc00; /* Cambiar el color del texto al pasar el ratón */
+}
+
+/* Estilos para el enlace de registro con Google */
+.google-btn {
+    display: block; /* Mostrar como bloque para ocupar todo el ancho */
+    text-align: center; /* Centrar el texto del enlace */
+    background-color: #dd4b39; /* Color de fondo del botón de Google */
+    color: #ffffff; /* Color del texto del botón de Google */
+    padding: 10px; /* Espaciado interno del botón de Google */
+    border-radius: 4px; /* Radio de borde del botón de Google */
+    text-decoration: none; /* Eliminar el subrayado del enlace */
+    margin-bottom: 15px; /* Espaciado inferior del enlace */
+}
+
+.google-btn:hover {
+    background-color: #c53727; /* Cambiar el color de fondo al pasar el ratón */
 }

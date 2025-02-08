@@ -1,9 +1,10 @@
+
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    background-image: url("../../img/San\ andres.jpg");
 }
 
 .container {
@@ -12,7 +13,7 @@ body {
 }
 
 h1 {
-    color: #333;
+    color: #1b1a1a;
     margin-top: 20px;
 }
 
@@ -22,27 +23,27 @@ h1 {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-bottom: 20px;
-    display: flex; /* Utilizamos flexbox para colocar la imagen y el texto en línea */
+    display: flex; /* Utilizamos flexbox para colocar la imagen y el texto en l�nea */
 }
 
 .item img {
-    max-width: 300px; /* Tamaño deseado para todas las imágenes */
+    max-width: 300px; /* Tama�o deseado para todas las im�genes */
     margin-right: 20px; /* Espacio entre la imagen y el texto */
 }
 
 .item .text {
-    flex: 1; /* El texto ocupará todo el espacio restante */
+    flex: 1; /* El texto ocupar� todo el espacio restante */
 }
 
 .item h2 {
-    margin-bottom: 10px; /* Espacio entre el título y el párrafo */
+    margin-bottom: 10px; /* Espacio entre el t�tulo y el p�rrafo */
 }
 
 .item p {
     color: #000000;
 }
 
-/* Estilos de encabezado y menú */
+/* Estilos de encabezado y men� */
 header {
     padding: 10px 20px;
     color: #fff;
@@ -56,7 +57,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: all 0.3s ease; /* Transición gradual para cambios en el menú */
+    transition: all 0.3s ease; /* Transici�n gradual para cambios en el men� */
 }
 
 #menu_bx {
@@ -85,7 +86,7 @@ nav {
     color: #ffcc00;
 }
 
-/* Estilos para dispositivos más pequeños */
+/* Estilos para dispositivos m�s peque�os */
 @media screen and (max-width: 768px) {
     .item {
         flex-direction: column;
@@ -103,16 +104,16 @@ nav {
 
     nav {
         flex-direction: column;
-        align-items: center; /* Centrar el menú verticalmente */
-        justify-content: center; /* Centrar el menú horizontalmente */
-        height: auto; /* Ajustar automáticamente la altura del menú */
-        overflow: hidden; /* Ocultar el menú desbordado */
-        max-height: none; /* Eliminar la altura máxima para que el menú pueda crecer verticalmente */
+        align-items: center; /* Centrar el men� verticalmente */
+        justify-content: center; /* Centrar el men� horizontalmente */
+        height: auto; /* Ajustar autom�ticamente la altura del men� */
+        overflow: hidden; /* Ocultar el men� desbordado */
+        max-height: none; /* Eliminar la altura m�xima para que el men� pueda crecer verticalmente */
     }
 
     #menu_bx {
         flex-direction: column;
-        align-items: center; /* Centrar los elementos del menú verticalmente */
+        align-items: center; /* Centrar los elementos del men� verticalmente */
     }
 
     #menu_bx li {
@@ -120,8 +121,17 @@ nav {
         margin: 10px 0;
     }
 
-    /* Mostrar el menú cuando se activa */
+    /* Mostrar el men� cuando se activa */
     nav.active {
-        max-height: none; /* Eliminar la altura máxima para que el menú pueda crecer verticalmente */
+        max-height: none; /* Eliminar la altura m�xima para que el men� pueda crecer verticalmente */
     }
+}
+
+.menu-link {
+    color: rgb(0, 0, 0); /* Color normal */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar el cursor sobre el elemento */
+}
+
+.menu-link:hover {
+    text-decoration: underline; /* Subraya el texto al pasar el cursor sobre el elemento */
 }

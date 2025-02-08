@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lugares Turísticos en Medellín</title>
+    <link rel="stylesheet" href="lugares_turisticoss.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h4>Magic Routes</h4>
+            <ul id="menu_bx">
+                <li><a href="/index.html">Descubrir</a></li>
+                <li><a href="/Community.html">Community</a></li>
+                <li><a href="#">Special Deals</a></li>
+                <li><a href="#">About US</a></li>
+                <li><a href="/form.html">Register</a></li>
+            </ul>
+        </nav>
+        <h1>Lugares Turísticos en Medellín</h1>
+    </header>
+
+    <!-- Primer lugar turístico: Parque Arví -->
+    <div class="container">
+        <div class="image-carousel">
+            <h2>Parque Arví</h2>
+            <img src="../../img/tour-parque-arvi.jpg" alt="Parque Arví 1">
+            <img src="../../img/arvi_antioquia.jpg" alt="Parque Arví 2">
+            <img src="../../img/arvi_antioquiasss.jpg" alt="Parque Arví 3">
+        </div>
+        <div class="text">
+            <p>El Parque Arví es una reserva natural ubicada en las montañas cercanas a Medellín, en el municipio de Santa Elena. Es uno de los destinos ecoturísticos más populares de la región y ofrece una amplia variedad de actividades al aire libre y experiencias en contacto con la naturaleza.</p>
+            <a href="https://parquearvi.org/">Sitio oficial</a>
+        </div>
+    </div>
+
+    <!-- Segundo lugar turístico: Plaza Botero -->
+    <div class="container">
+        <div class="image-carousel">
+            <h2>Plaza Botero</h2>
+            <img src="../../img/Plaza-Botero-Medellin.webp" alt="Plaza Botero 1">
+            <img src="../../img/cara_gorda.jpg" alt="Plaza Botero 2">
+            <img src="../../img/caballo gordo.jpg" alt="Plaza Botero 2">
+            <img src="../../img/botero escultura4.jpg" alt="Plaza Botero 2">
+            <img src="../../img/botero escultura5.jpg" alt="Plaza Botero 2">
+            <img src="../../img/botero escultura6.jpg" alt="Plaza Botero 2">
+            <img src="../../img/botero escultura7.jpg" alt="Plaza Botero 2">
+            
+            <!-- Agrega más imágenes si es necesario -->
+        </div>
+        <div class="text">
+            <p>La Plaza Botero es un icónico espacio público ubicado en el centro de la ciudad de Medellín, Colombia. Es famosa por albergar una impresionante colección de esculturas monumentales creadas por el renombrado artista colombiano Fernando Botero.
+
+                La plaza cuenta con 23 esculturas de gran tamaño, todas creadas en el estilo característico de Botero, que se distingue por sus formas voluptuosas y exageradas. Las esculturas representan una variedad de temas y personajes, desde figuras humanas hasta animales, cada una con su propio encanto y expresividad.</p>
+            <a href="enlace_al_lugar">Sitio oficial</a> <!-- Cambia la URL por el sitio oficial -->
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="image-carousel">
+            <h2>Parque Nacional Natural Los Nevados</h2>
+            <img src="../../img/parque naxional.jpg" alt="Plaza Botero 1">
+            <img src="../../img/nevado n.jpg" alt="Plaza Botero 2">
+            <img src="../../img/parque naxional los nevados.jpg" alt="Plaza Botero 2">
+            <!-- Agrega más imágenes si es necesario -->
+        </div>
+        <div class="text">
+            <p> El Parque Nacional Natural Los Nevados es una reserva natural ubicada en la Cordillera Central de los Andes colombianos, en los departamentos de Caldas, Quindío, Risaralda y Tolima. Es conocido por su impresionante paisaje de montañas, picos nevados, lagunas glaciares y una gran diversidad de flora y fauna.El Parque Nacional Natural Los Nevados es una reserva natural ubicada en la Cordillera Central de los Andes colombianos, en los departamentos de Caldas, Quindío, Risaralda y Tolima. Es conocido por su impresionante paisaje de montañas, picos nevados, lagunas glaciares y una gran diversidad de flora y fauna.
+            </div>
+            <a href="https://www.parquesnacionales.gov.co/nuestros-parques/pnn-los-nevados/">Sitio oficial</a> <!-- Cambia la URL por el sitio oficial -->
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var carousels = document.querySelectorAll('.image-carousel');
+            carousels.forEach(function(carousel) {
+                var currentIndex = 0;
+                var images = carousel.querySelectorAll('img');
+                var totalImages = images.length;
+                var intervalTime = 5000; // Cambia la imagen cada 5 segundos
+
+                function showImage(index) {
+                    // Oculta todas las imágenes
+                    images.forEach(function(image) {
+                        image.style.display = 'none';
+                    });
+                    // Muestra la imagen actual
+                    images[index].style.display = 'block';
+                }
+
+                function nextImage() {
+                    currentIndex++;
+                    if (currentIndex >= totalImages) {
+                        currentIndex = 0;
+                    }
+                    showImage(currentIndex);
+                }
+
+                // Muestra la primera imagen al cargar la página
+                showImage(currentIndex);
+
+                // Cambia la imagen cada intervalo de tiempo
+                setInterval(nextImage, intervalTime);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+h1 {
+    color: #1b1a1a;
+    margin-top: 20px;
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+}
+
+.info-container img {
+    max-width: 300px;
+    margin-right: 20px;
+}
+
+.info-container p {
+    color: #000;
+}
+
+/* Estilos de encabezado y menú */
+header {
+    background-color: #2ecc71; 
+    color: #fff;
+    text-align: center; 
+    padding: 20px; 
+}
+
+nav {
+    background-color: #27ae60; 
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #030303;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Estilos para dispositivos más pequeños */
+@media screen and (max-width: 768px) {
+    .info-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-container img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .info-container p {
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        overflow: hidden;
+        max-height: none;
+    }
+
+    nav.active {
+        max-height: none;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+.menu-link {
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.menu-link:hover {
+    text-decoration: underline;
+}
